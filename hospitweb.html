@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>project RDG | Team RDG</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="shortcut icon" href="img/fav-icon.svg" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+		<a class="logo"><i class="fas fa-hospital"></i> Sanjivani Hospital</a>
+
+		<nav class="navbar">
+			<a href="hospitweb.html">home</a>
+			<a href="about.html">about</a>
+			<a href="serveices.html">services</a>
+			<a href="appoinment.html">appointment</a>
+			<a href="team.html">team</a>
+			<a href="contact.html">contact</a>
+			<a href="feedback.html">feedback</a>
+		</nav>
+
+		<div id="menubtn" class="fas fa-bars"></div>
+	</header><br><br><br><br><br><br>
+	<img src="img/logo1.jpg" alt="home"><br>
+	<hr style="height:5px;border-width:0;color:orangered;background-color:orangered">
+	<section class="home">
+		<div class="content">
+			<h3>stay healthy, be fit</h3>
+			<p>The primary goal of our hospital is to connect people to healthcare facilities and get consultation from professional doctors.</p>
+			<a href="appoinment.html" class="btn">consult now</a>
+		</div>
+		<div class="image">
+			<img src="img/img1.png" alt="">
+		</div>
+	</section>
+
+	<section class="about">
+		<h1 class="heading">about <span>us</span></h1>
+
+		<div class="wrapper">
+			<div class="image">
+				<img src="img/img2.png" alt="">
+			</div>
+			<div class="content">
+				<h3>why you should choose us</h3>
+				<p>our hospital have qualified doctors and nurses experienced in their fields. 
+					we'll know how to perform procedures correctly and ensure everything goes as planned.
+					The staff should also be certified by professional organizations.
+					All of these certifications guarantee patient safety and qualification.</p>
+				<p>our Hospitals are essential for providing healthcare services to people in need.
+					our facilities are equipped with advanced medical technologies and equipment, 
+					allowing medical professionals to provide high-quality medical care to patients.</p>
+					<a href="team.html" class="btn">our team</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="services">
+		<h1 class="heading">our <span>services</span></h1>
+
+		<div class="box-container">
+			<div class="box">
+				<i class="fas fa-ambulance"></i>
+				<h3>24/7 ambulance</h3>
+				<p>our Ambulance services provide medical care to patients,
+					 ensuring that the patient immediately reach the hospital.</p>
+				<a href="tel:108" class="btn">call the ambulance</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-notes-medical"></i>
+				<h3>free ckeckups every tuesday</h3>
+				<p>every tuesday we provide a free general ckeckups like blood ckeckup, body ckeckup, urine ckeckup, etc</p>
+				<a href="appoinment.html" class="btn">ckeckup</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-user-md"></i>
+				<h3>expert consultants</h3>
+				<p>our best doctors are provide best consultation, our doctors visit face to face and consult the patient</p>
+				<a href="appoinment.html" class="btn">book now</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-procedures"></i>
+				<h3>good facility</h3>
+				<p>our hospital is provide a best facility like consultation, free ckeckup, pharmacy, etc</p>
+				<a href="serveices.html" class="btn">read more</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-pills"></i>
+				<h3>pharmacy</h3>
+				<p>our hospital also have pharmacitical medical which provide best medicine</p>
+				<a href="#" class="btn">medicine</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-heartbeat"></i>
+				<h3>best care</h3>
+				<p>our hospital provide 24/7 care to patient, our sisters always present near by patient</p>
+				<a href="contact.html" class="btn">visit</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<h1 class="heading"><span>appointment</span></h1>
+
+		<div class="wrapper">
+			<div class="image">
+				<img src="img/img3.png" alt="">
+			</div>
+
+			<form action="">
+				<h3>book appointment</h3>
+				<input type="text" placeholder="your full name" class="box">
+				<input type="email" placeholder="your email" class="box">
+				<input type="number" placeholder="your phone number" class="box">
+				<input type="date" class="box">
+				<div class="dropdown">
+					<div class="dropdown-options">
+						<select name="treatment" id="treatment" class="box">
+							<option value="Cardiologist">general checkup</option>
+							<option value="Dermatologist">CT scan</option>
+							<option value="Neurologists">diagnosis</option>
+							<option value="Pediatrician">pharmacy</option>
+							<option value="Neurologists">dental care</option>
+						  </select>
+					</div>
+				  </div><br><br><br><br><br><br>
+				<input type="submit" value="place appointment" onclick="openPopup()" class="btn">
+			</form>
+			<div class="popup" id="popup">
+		
+				<h2>Thank you</h2>
+				<p>Your appointment has been successfully submited. Thanks!</p>
+				<button type="button" onclick="closePopup()">OK</button>
+			</div>
+		</div>
+		</section>
+		
+		<section class="services">
+			<h1 class="heading">our <span>services</span></h1>
+	
+			<div class="box-container">
+				<div class="box">
+					<i class="fas fa-ambulance"></i>
+					<img src="img/wardhan.jpg">
+					<h3>Dr. Raj Shinde</h3>
+					<p>Post:Cardiologist</p><p>Education:MD</p>
+					<a href="appoinment.html" class="btn">contact</a>
+				</div>
+				<div class="box">
+					<i class="fas fa-ambulance"></i>
+					<img src="img/darsha.jpg">
+					<h3>Dr. Darshan Takade</h3>
+					<p>Post:Neurologist</p><p>Education:MD</p>
+					<a href="appoinment.html" class="btn">contact</a>
+				</div>
+				<div class="box">
+					<i class="fas fa-ambulance"></i>
+					<img src="img/pri.jpg">
+					<h3>Dr. Priya Yadhav</h3>
+					<p>Post:Surgeon</p><p>Education:MBBS</p>
+					<a href="appoinment.html" class="btn">contact</a>
+				</div>
+				<div class="box">
+					<i class="fas fa-ambulance"></i>
+					<img src="img/gann.jpg">
+					<h3>Dr. Ganesh Jay</h3>
+					<p>Post:Surgeon</p><p>Education:MD</p>
+					<a href="appoinment.html" class="btn">contact</a>
+				</div>
+	
+			</div>
+		</section>
+		<section class="services">
+			<h1 class="heading">contact <span>us</span></h1>
+	
+			<div class="box-container">
+				<div class="box">
+					<i class="fas fa-ambulance"></i>
+					<h3>ambulance</h3>
+					<p>108</p>
+					<a href="tel:108" class="btn">call the ambulance</a>
+				</div>
+	
+				<div class="box">
+					<i class="fas fa-notes-medical"></i>
+					<h3>address</h3>
+					<p>Sanjivani hospital,</p>
+					<p>Miraj 416416,</p>
+					<p>sangli,Maharastra.</p>
+					<a href="https://goo.gl/maps/wzz8SjNCAZYD6oxn7?coh=178573&entry=tt" class="btn">map</a>
+				</div>
+	
+				<div class="box">
+					<i class="fas fa-user-md"></i>
+					<h3>phone number</h3>
+					<p>+19 8886732365</p>
+					<p>+19 9886752360</p>
+					<a href="tel:9886752360" class="btn">contact</a>
+				</div>
+	
+				<div class="box">
+					<i class="fas fa-procedures"></i>
+					<h3>e-mail</h3>
+					<p>sanjivanihospital@gmail.com</p>
+					<a href="hospitweb.html" class="btn">mail</a>
+				</div>
+	
+			</div>
+		</section>
+		<section class="contact">
+			<h1 class="heading"><span>feedback</span></h1>
+		
+			<div class="wrapper">
+				<div class="image">
+					<img src="img/feedback.webp" alt="">
+				</div>
+		
+				<form action="">
+					<h3>feedback</h3>
+					<input type="text" placeholder="your full name" class="box">
+					<input type="email" placeholder="your email" class="box">
+					<textarea rows="5" placeholder="your thought matters" class="box"></textarea>
+					<input type="submit" value="Send" onclick="openPopup()" class="btn">
+				</form>
+				<div class="popup" id="popup">
+		
+					<h2>Thank you</h2>
+					<p>Your message has been successfully submited. Thanks!</p>
+					<button type="button" onclick="closePopup()">OK</button>
+				</div>
+			</div>
+			</section>
+ 
+	<section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="hospitweb.html">home</a>
+				<a href="about.html">about</a>
+				<a href="serveices.html">services</a>
+				<a href="about.html">about</a>
+				<a href="appoinment.html">appointment</a>
+				<a href="contact.html">contact</a>
+				<a href="team.html">team</a>
+				<a href="feedback.html">feedback</a>
+				
+			</div>
+
+			<div class="box">
+				<h3>services offered</h3>
+				<a href="appoinment.html">CT scan</a>
+				<a href="appoinment.html">diagnosis</a>
+				<a href="contact.html">ambulance services</a>
+				<a href="appoinment.html">pharmacy</a>
+				<a href="appoinment.html">dental care</a>
+			</div>
+
+			<div class="box">
+				<h3>our socials</h3>
+				<a href="https://m.facebook.com/Sanjeevani-Hospital-811469652540688/"><i class="fab fa-facebook"></i> facebook</a>
+				<a href="https://twitter.com/sanjivanisirsa?lang=en"><i class="fab fa-twitter"></i> twitter</a>
+				<a href="https://www.instagram.com/sanjivanihospitalsirsa/?hl=en"><i class="fab fa-instagram"></i> instagram</a>
+				
+			</div>
+		</div>
+
+		<div class="bottom">&real;  <span>team RDG</span></div>
+	</section>
+	<script>
+		let popup = document.getElementById("popup");
+		function openPopup(){
+			popup.classList.add("open-popup");
+		}
+		function closePopup(){
+			popup.classList.remove("open-popup");
+		}
+	</script>
+	<script>
+		
+		let menu = document.querySelector('#menubtn'),
+		navbar = document.querySelector('.navbar');
+
+		menu.onclick = () =>{
+			menu.classList.toggle('fa-times');
+			navbar.classList.toggle('active');
+		}
+
+		window.onscroll = () =>{
+			menu.classList.remove('fa-times');
+			navbar.classList.remove('active');
+		}
+		
+	</script>
+
+	
+</body>
+</html>

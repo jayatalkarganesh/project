@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>project RDG| Team RDG</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="shortcut icon" href="img/fav-icon.svg" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+		<a class="logo"><i class="fas fa-hospital"></i> Sanjivani Hospital</a>
+
+		<nav class="navbar">
+			<a href="hospitweb.html">home</a>
+			<a href="about.html">about</a>
+			<a href="serveices.html">services</a>
+			<a href="appoinment.html">appointment</a>
+			<a href="team.html">team</a>
+			<a href="contact.html">contact</a>
+			<a href="feedback.html">feedback</a>
+		</nav>
+
+		<div id="menubtn" class="fas fa-bars"></div>
+	</header>
+    <br><br><br><br><br><br><br>
+<section class="contact">
+    <h1 class="heading"><span>appointment</span></h1>
+
+    <div class="wrapper">
+        <div class="image">
+            <img src="img/img3.png" alt="">
+        </div>
+
+        <form action="">
+            <h3>book appointment</h3>
+            <input type="text" placeholder="your full name" class="box">
+            <input type="email" placeholder="your email" class="box">
+            <input type="number" placeholder="your phone number" class="box">
+            
+            <input type="date" class="box">
+            <div class="dropdown">
+                <div class="dropdown-options">
+                    <select name="treatment" id="treatment" class="box">
+                        <option value="Cardiologist">general checkup</option>
+                        <option value="Dermatologist">CT scan</option>
+                        <option value="Neurologists">diagnosis</option>
+                        <option value="Pediatrician">pharmacy</option>
+                        <option value="Neurologists">dental care</option>
+                      </select>
+                </div>
+              </div><br><br><br><br><br><br>
+             
+            <input type="submit" value="place appointment" onclick="openPopup()" class="btn">
+        </form>
+		<div class="popup" id="popup">
+		
+			<h2>Thank you</h2>
+			<p>Your appointment has been successfully submited. Thanks!</p>
+			<button type="button" onclick="closePopup()">OK</button>
+		</div>
+
+    </div>
+    </section>
+    <section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="hospitweb.html">home</a>
+				<a href="about.html">about</a>
+				<a href="serveices.html">services</a>
+				<a href="about.html">about</a>
+				<a href="appoinment.html">appointment</a>
+				<a href="contact.html">contact</a>
+				<a href="team.html">team</a>
+				<a href="feedback.html">feedback</a>
+			</div>
+
+			<div class="box">
+				<h3>services offered</h3>
+				<a href="appoinment.html">CT scan</a>
+				<a href="appoinment.html">diagnosis</a>
+				<a href="contact.html">ambulance services</a>
+				<a href="appoinment.html">pharmacy</a>
+				<a href="appoinment.html">dental care</a>
+			</div>
+
+			<div class="box">
+				<h3>our socials</h3>
+				<a href="https://m.facebook.com/Sanjeevani-Hospital-811469652540688/"><i class="fab fa-facebook"></i> facebook</a>
+				<a href="https://twitter.com/sanjivanisirsa?lang=en"><i class="fab fa-twitter"></i> twitter</a>
+				<a href="https://www.instagram.com/sanjivanihospitalsirsa/?hl=en"><i class="fab fa-instagram"></i> instagram</a>
+				
+			</div>
+		</div>
+
+		<div class="bottom">&real;  <span>team RDG</span></div>
+	</section>
+	<script>
+		let popup = document.getElementById("popup");
+		function openPopup(){
+			popup.classList.add("open-popup");
+		}
+		function closePopup(){
+			popup.classList.remove("open-popup");
+		}
+	</script>
+</body>
+</html>
